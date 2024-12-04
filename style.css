@@ -1,7 +1,7 @@
 body {
     color: white;
     background: black;
-    margin: 0px;
+    margin: 0;
     font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
@@ -11,50 +11,59 @@ header {
     padding: 20px;
     font-size: 32px;
     color: rgb(42, 122, 228);
-}
-
-.chamada {
-    background: rgb(184, 156, 213);
-    padding-bottom: 80px;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-
-.chamada-texto {
-    margin-right: 5%;
+    text-align: center; /* Adicionando alinhamento centralizado */
 }
 
 h1 {
     font-size: 40px;
+    margin: 0; /* Removendo o espaço extra ao redor do h1 */
+}
+
+.chamada {
+    background: rgb(184, 156, 213);
+    padding: 80px 20px; /* Ajustando o padding para ser uniforme */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adicionando alinhamento central vertical */
+    flex-direction: column; /* Organizando os elementos na coluna */
+}
+
+.chamada-texto {
+    margin-bottom: 20px; /* Ajustando a margem inferior */
+    text-align: center; /* Centralizando o texto */
 }
 
 p {
     font-size: 20px;
+    text-align: center; /* Centralizando o parágrafo */
+}
+
+.categoria {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    text-align: center; /* Centralizando o título da categoria */
+    font-size: 24px;
+    margin-bottom: 20px; /* Ajustando a margem inferior */
 }
 
 .categoria-videos {
     display: flex;
     overflow-x: auto;
     gap: 10px;
-}
-
-.categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
+    justify-content: center; /* Centralizando os vídeos */
 }
 
 .categoria-videos img {
-    opacity: 0.5;
+    opacity: 0.7;
     height: 200px;
+    transition: opacity 0.3s ease, border 0.3s ease; /* Adicionando transição suave */
 }
 
 .categoria-videos img:hover {
     opacity: 1.0;
     border: 3px solid green;
-}
-
-.categoria h2 {
-    color: rgb(42, 122, 228);
 }
